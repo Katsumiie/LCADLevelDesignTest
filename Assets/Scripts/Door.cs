@@ -17,7 +17,7 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
-        canPlayerOpenDoor = false;                                                  //Why do we have to set this variable to false?
-        this.transform.DOMoveY(this.transform.position.y + 4f, doorOpenTime);       //What is this line doing?   A: 
+        canPlayerOpenDoor = false;                                                  //****Why do we have to set this variable to false? A: This variable is set to false after the player opens the door so that the player cannot open a door that is already open.
+        this.transform.DOMoveY(this.transform.position.y + 4f, doorOpenTime);       //What is this line doing?   A: This line allows the door to translate upward by 4 units on the y axis over a duration based on the doorOpenTime. 
     }
 }
